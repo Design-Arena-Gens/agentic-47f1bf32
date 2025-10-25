@@ -1,0 +1,37 @@
+{
+  "name": "cursor_gpt5-project-47f1bf32-c2ba-4152-8106-73464c53e00c",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -k \"cross-env ELECTRON_START_URL=http://localhost:3000 next dev\" \"wait-on http://localhost:3000 && electron electron/main.js\"",
+    "build": "next build",
+    "start": "cross-env ELECTRON_START_URL=http://localhost:3000 next start",
+    "electron": "electron electron/main.js",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "cheerio": "^1.1.2",
+    "framer-motion": "^12.23.24",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^3.0.3",
+    "localforage": "^1.10.0",
+    "next": "16.0.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "concurrently": "^9.2.1",
+    "cross-env": "^10.1.0",
+    "electron": "^38.4.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.0.0",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "wait-on": "^9.0.1"
+  }
+}
